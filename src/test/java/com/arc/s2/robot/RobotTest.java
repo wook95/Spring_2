@@ -1,4 +1,4 @@
-package com.arc.s2;
+package com.arc.s2.robot;
 
 import static org.junit.Assert.*;
 
@@ -11,21 +11,23 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/**/*-context.xml"})
-public class MytestCase {
+public class RobotTest {
 
-	
 	@Autowired
-	private Car car;
-	
-	
-	
+	private Robot robot; 
+		
+		
 	@Test
 	public void test() {
 		
-		System.out.println(car.getName());
-		System.out.println(car.getEngine().getFule());
+		System.out.println(robot.getArm_left().getName());
+		System.out.println(robot.getArm_Right().getName());
 		
-
+		
+		//left,right이름 찍어보기
+	
+	
+	
 	}
 
 }
