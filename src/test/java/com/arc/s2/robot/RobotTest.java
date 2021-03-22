@@ -14,16 +14,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class RobotTest {
 
 	@Autowired
-	private Robot robot; 
+	private Robot robot;
+	private Arm_Left arm_left;
 		
 		
 	@Test
 	public void test() {
 		
-		System.out.println(robot.getArm_left().getName());
-		System.out.println(robot.getArm_Right().getName());
 		
-		
+		assertNotNull(robot.getArm_left());
 		//left,right이름 찍어보기
 	
 	
